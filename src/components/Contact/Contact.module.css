@@ -1,0 +1,45 @@
+.page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formContainer input{
+    width: 400px;
+    border-radius: 8px;
+    border: 3px solid #E31B6D;
+    background-color: rgba(207, 196, 196, 0.262);
+
+    color: white;
+}
+
+.formContainer label{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+    font-size: 16px;
+
+}
+
+.formContainer textarea{
+    resize: none;
+    height: 200px;
+    border-radius: 8px;
+    border: 3px solid #E31B6D;
+    background-color: rgba(207, 196, 196, 0.262);
+    color: white;
+
+}
+
+.submit{
+    border-radius: 8px;
+    font-size: 17px;
+
+}

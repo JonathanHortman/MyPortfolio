@@ -1,0 +1,45 @@
+.navItems a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.navItems a:hover{
+    transform: scale(1.3);
+    color: #E31B6D;
+}
+.active{
+    color: red;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.navContainer {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffffc8;
+    border-bottom: 3px solid #E31B6D;
+    
+    width: 70vw;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.itemsCointainer{
+    display: flex; 
+    width: 30vw;
+    /* background-color: rebeccapurple; */
+    justify-content: space-between;
+    font-family: 'Courgette', cursive;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    width: 70px;
+}
+
