@@ -100,6 +100,7 @@
     margin-top: 10px;
 }
 
+
 .text2 {
     display: flex;
     justify-content: center;
@@ -116,4 +117,41 @@
 
 a {
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bloque2 {
+        width: 100%;
+    }
+
+    .huevo {
+        margin-top: 930px;
+        width: 85vw;
+    }
+
+
+    .text2 {
+        width: 100%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .bloque1 {
+        width: 100%;
+        margin-top: 600px;
+    }
+
+    .tokenContainer{
+        display: flex;
+        flex-direction: column;
+    }
 }

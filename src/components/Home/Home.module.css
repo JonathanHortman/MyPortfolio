@@ -29,3 +29,9 @@
     background-color: #e31b6ec5;
     transition: ease-in 0.2s;
 }
+
+@media (max-width: 600px) {
+    .video{
+        width: 100%;
+    }
+}
