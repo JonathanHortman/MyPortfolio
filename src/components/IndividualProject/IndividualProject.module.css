@@ -6,7 +6,6 @@
     width: 600px;
     height: 400px;
     background-color: rgba(255, 255, 255, 0);
-    
 }
 
 .box{
@@ -39,16 +38,23 @@
 
 }
 
-.hover h1{
+.hover button{
     font-family: 'Kdam Thmor Pro', sans-serif;
-    color: aliceblue;
-    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.694);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px #E31B6D;
+    border: solid 3px #e31b6eaa;
+    border-radius: 15px;
     font-size: 2.5em;
     text-transform: uppercase;
 }
 
+
 .box:hover .hover{
-    cursor: pointer;
     width: 100%;
     border-radius: 15px;
+}
+
+.hover button:hover{
+    font-size: 2.6em;
 }

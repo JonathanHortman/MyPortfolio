@@ -123,6 +123,7 @@ a {
     text-decoration: none;
 }
 
+
 @media (max-width: 600px) {
     .container {
         display: flex;

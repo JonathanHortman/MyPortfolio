@@ -2,8 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.238);
-    height: 100vh
+    background-color: #181b1e;
+    height: 100vh;
+}
+
+.modalBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transition: ease-in 1s;
+    background-color: rgba(0, 0, 0, 0.717);
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
 }
 
 @media(max-width:400px){

@@ -1,0 +1,78 @@
+.modalContainer {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.imgContainerRow1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.imgContainerRow2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imgContainerRow1 img {
+    border: 2px solid rgba(0, 0, 0, 0.636);
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+}
+
+.imgContainerRow2 img {
+    border: 2px solid rgba(0, 0, 0, 0.636);;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+}
+
+.projectTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+    margin-top: 15px;
+    width: 100%;
+    background-color: rgba(74, 74, 74, 0.301);
+}
+
+.projectDescription{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.closeButton{
+    display: flex;
+    position: absolute;
+    border: 2px solid rgba(0, 0, 0, 0.647);
+    color: rgba(0, 0, 0, 0.647);
+    font-weight: bold;
+    font-size: 17px;
+    width: 25px;
+    height: 25px;
+    right: 6px;
+    top: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.closeButton:hover{
+    border: 2px solid #E31B6D;
+    background-color: #E31B6D;
+    color:black;
+    font-size: 17px; 
+}
