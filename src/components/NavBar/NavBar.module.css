@@ -30,12 +30,12 @@
     width: 70vw;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    z-index: 1000;
 }
 
 .itemsCointainer {
     display: flex;
     width: 30vw;
-    /* background-color: rebeccapurple; */
     justify-content: space-between;
     font-family: 'Courgette', cursive;
     font-size: 24px;
