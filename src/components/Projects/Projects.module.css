@@ -1,6 +1,19 @@
 .page{
-    background-color: rgba(255, 0, 0, 0.238)
-    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.238);
     height: 100vh
+}
+
+@media(max-width:400px){
+    .page{
+        flex-direction: column;
+    }
+    .projectsContainers{
+        display: none;
+        width: auto;
+        height: auto;
+    }
 }
 

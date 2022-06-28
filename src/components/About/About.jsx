@@ -26,7 +26,7 @@ import { useEffect } from 'react'
 const About = () => {
 
 useEffect (()=> {
-Aos.init({duration: 500})
+Aos.init({duration: 500, once:true})
 },[])
 
   return (

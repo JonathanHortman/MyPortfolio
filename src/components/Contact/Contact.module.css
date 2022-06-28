@@ -21,20 +21,24 @@
     color: white;
 }
 
-.formContainer label{
+.labels{
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: white;
     font-size: 16px;
 
 }
+.cont{
+    width: 400px;
+}
 
-.formContainer textarea{
+.textareaa{
     resize: none;
     height: 200px;
     border-radius: 8px;
     border: 3px solid #E31B6D;
     background-color: rgba(207, 196, 196, 0.262);
     color: white;
+    width: 100%;
 
 }
 

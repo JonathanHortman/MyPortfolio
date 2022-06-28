@@ -1,7 +1,16 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import style from "./Contact.module.css"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react'
+
 export const ContactUs = () => {
+
+  useEffect (()=> {
+    Aos.init({duration: 500, once:true})
+    },[])
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -19,16 +28,32 @@ export const ContactUs = () => {
   return (
     <div id='Contact' className={style.page}>
       <form className={style.formContainer} ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+
+        <div className={style.cont} data-aos="fade-right">
+        <label className={style.labels}>Name</label>
         <input type="text" name="user_name" />
+        </div>
+
         <br />
-        <label>Email</label>
+      
+        <div className={style.cont} data-aos="fade-left">
+        <label className={style.labels}>Email</label>
         <input type="email" name="user_email" />
+        </div>
+
         <br />
-        <label>Message</label>
-        <textarea name="message" />
+
+        <div className={style.cont} data-aos="fade-right">
+        <label className={style.labels}>Message</label>
+        <textarea className={style.textareaa} name="message" />
+        </div>
+
         <br />
+
+        <div className={style.cont} data-aos="fade-left">
         <input className={style.submit} type="submit" value="Send" />
+        </div>
+
       </form>
     </div>
   );
