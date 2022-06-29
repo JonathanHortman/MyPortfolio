@@ -52,7 +52,6 @@ const Projects = () => {
 
   return (
     <div id='Projects' className={style.page}>
-
       <div className={style.projectsContainers} data-aos="fade-right">
         <IndividualProject img={pokemon} name='pokemon' handleModal={handleModal} />
       </div>

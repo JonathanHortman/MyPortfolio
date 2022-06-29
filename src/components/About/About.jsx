@@ -22,6 +22,9 @@ import token_6 from '../../Images/token_6.png'
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
+import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaGithub, FaLinux } from 'react-icons/fa';
+import { SiExpress, SiPostgresql, SiRedux, SiSequelize, SiTypescript} from 'react-icons/si';
+
 
 const About = () => {
 
@@ -38,7 +41,7 @@ Aos.init({duration: 500, once:true})
           <div data-aos="zoom-out-right"  className={style.softTitle}>Soft Skills</div>
           <div data-aos="zoom-out-right"  className={style.tokenContainer}>
             <div className={style.tokenywordContainer}>
-              <img className={style.tokenImage} src={token_2} alt="skills" />
+            <img className={style.tokenImage} src={token_2} alt="skills" />
               <p>Team work</p>
             </div>
             <div className={style.tokenywordContainer}>
@@ -62,21 +65,22 @@ Aos.init({duration: 500, once:true})
         <div className={style.subBloque2} >
           <div data-aos="fade-up" className={style.softTitle}>Tech Skills</div>
           <div  data-aos="fade-up" className={style.row1}>
-            <img  className={style.images} src={react} alt="image" />
-            <img  className={style.images} src={html} alt="image" />
-            <img  className={style.images} src={js} alt="image" />
-            <img  className={style.images} src={css} alt="image" />
-            <img  className={style.images} src={redux} alt="image" />
-            <img  className={style.images} src={express} alt="image" />
-            <img  className={style.images} src={node} alt="image" />
+            <FaReact className={style.images}/>
+            <FaHtml5 className={style.images}/>
+            <FaJsSquare className={style.images}/>
+            <FaCss3Alt className={style.images}/>
+            <SiRedux className={style.images}/>
+            <SiExpress className={style.images}/>
+            <FaNodeJs className={style.images}/>
           </div>
           <div data-aos="fade-up" className={style.row2} >
-            <img  className={style.images} src={git} alt="image" />
-            <img  className={style.images} src={github} alt="image" />
-            <img  className={style.images} src={postgresql} alt="image" />
-            <img  className={style.images} src={ts} alt="image" />
-            <img  className={style.images} src={sequelize} alt="image" />
-            <img  className={style.images} src={linux} alt="image" />
+            
+            <FaGitAlt className={style.images}/>
+            <FaGithub className={style.images}/>
+            <SiPostgresql className={style.images}/>
+            <SiTypescript className={style.images}/>
+            <SiSequelize className={style.images}/>
+            <FaLinux className={style.images}/>
           </div>
         </div>
       </div>
