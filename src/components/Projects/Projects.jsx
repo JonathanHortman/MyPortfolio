@@ -7,10 +7,14 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import Modal from '../Modal/Modal'
-import img1 from '../../assets/img1.jpg'
-import img2 from '../../assets/img2.jpg'
-import img3 from '../../assets/img3.jpg'
-import img4 from '../../assets/img4.jpg'
+import img1 from '../../assets/img1.png'
+import img2 from '../../assets/img2.png'
+import img3 from '../../assets/img3.png'
+import img4 from '../../assets/img4.png'
+import img5 from '../../assets/sound1.png'
+import img6 from '../../assets/sound2.png'
+import img7 from '../../assets/sound3.png'
+import img8 from '../../assets/sound4.png'
 
 const Projects = () => {
   const [modal, setModal] = useState({
@@ -62,14 +66,14 @@ const Projects = () => {
       {
         modal.pokemon === true ?
           <div className={style.modalBackground}>
-            <Modal handleModal={handleModal} img1={img1} img2={img2} img3={img3} img4={img4} title='Individual proyect "Pokemon"' description='bueno... aca deberia ir la descripcion del proyecto la cual no tengo ganas de escribir, sepan disculpar..' />
+            <Modal handleModal={handleModal} img1={img1} img2={img2} img3={img3} img4={img4} title='Individual proyect "Pokemon"' deploy="https://pbs.twimg.com/media/FFi_DG0XEAYJ6ZH?format=jpg&name=large" repo="https://github.com/JonathanHortman/pi-poke" description='i feel very proud to be able to show you mi individual project made in the bootcamp of Henry, where I could put my knowledge into practice and demostrate my imagination and professionalism to create features and styles.' />
           </div>
           : null
       }
       {
         modal.soundwave === true ?
           <div className={style.modalBackground}>
-            <Modal handleModal={handleModal} img1={img1} img2={img1} img3={img1} img4={img1} title='Grupal proyect "SoundWave"' description='bueno... aca deberia ir la descripcion del proyecto la cual no tengo ganas de escribir, sepan disculpar..' />
+            <Modal handleModal={handleModal} img1={img5} img2={img6} img3={img7} img4={img8} title='Grupal proyect "SoundWave"' deploy="https://soundwave-swart.vercel.app/" repo="https://pbs.twimg.com/media/FFi_DG0XEAYJ6ZH?format=jpg&name=large" description='SoundWave is a free access streaming music service, where any user registered as an artist can share their music and be able to receive donations from their followers to boost their career.' />
           </div>
           : null
       }

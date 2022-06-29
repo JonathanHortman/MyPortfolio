@@ -1,5 +1,7 @@
 import React from 'react'
 import style from './Modal.module.css'
+import { FaGithub, FaChrome } from 'react-icons/fa';
+
 const Modal = (props) => {
   return (
     <div className={style.modalContainer}>
@@ -12,7 +14,17 @@ const Modal = (props) => {
         <img src={props.img3} alt="image 3" />
         <img src={props.img4} alt="image 4" />
       </div>
-      <div className={style.projectTitle}>{props.title}</div>
+      <div className={style.projectTitle}>
+        <div>{props.title}</div>
+        <div className={style.iconsContainer}>
+          <a className={style.links} href={props.deploy} target="_blank">
+            <FaChrome className={style.icons} />
+          </a>
+          <a className={style.links} href={props.repo} target="_blank">
+            <FaGithub className={style.icons} />
+          </a>
+        </div>
+      </div>
       <div className={style.projectDescription}>{props.description}</div>
     </div>
   )

@@ -34,18 +34,18 @@
     justify-content: space-evenly;
     background-color: #ffffffc8;
     border-bottom: 3px solid #E31B6D;
-    width: 70vw;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    width: 100vw;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     z-index: 1000;
 }
 
 .itemsCointainer {
     display: flex;
-    width: 30vw;
+    width: 40vw;
     justify-content: space-between;
-    font-family: 'Courgette', cursive;
-    font-size: 24px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 23px;
     color: rgb(0, 0, 0);
     z-index: 10;
 

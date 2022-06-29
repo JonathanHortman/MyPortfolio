@@ -5,9 +5,9 @@ const NavBar = () => {
   return (
    <div className={style.page}>
       <div id='NavBar' className={style.navContainer} >
-        <div className={style.logoCont}>
+        {/* <div className={style.logoCont}>
           <img className={style.logo} src={logo} alt="logo" />
-        </div>
+        </div> */}
         <div className={style.itemsCointainer}>
           
           <div className={style.navItems}>
