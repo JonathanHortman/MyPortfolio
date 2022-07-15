@@ -8,7 +8,7 @@ const Home = () => {
           <source src={signature} type='video/mp4' />
         </video>
           <a href="#About" className={style.startButton}>
-            ⮟ View my work ⮟
+             VIEW MY WORK
           </a>
       </div>
   )

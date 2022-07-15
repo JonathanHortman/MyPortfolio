@@ -66,14 +66,14 @@ const Projects = () => {
       {
         modal.pokemon === true ?
           <div className={style.modalBackground}>
-            <Modal handleModal={handleModal} img1={img1} img2={img2} img3={img3} img4={img4} title='Individual proyect "Pokemon"' deploy="https://pbs.twimg.com/media/FFi_DG0XEAYJ6ZH?format=jpg&name=large" repo="https://github.com/JonathanHortman/pi-poke" description='i feel very proud to be able to show you mi individual project made in the bootcamp of Henry, where I could put my knowledge into practice and demostrate my imagination and professionalism to create features and styles.' />
+            <Modal handleModal={handleModal} img1={img1} img2={img2} img3={img3} img4={img4} title='Individual proyect "Pokemon"' deploy="#" repo="https://github.com/JonathanHortman/Pi-Pokemon" description='i feel very proud to be able to show you mi individual project made in the bootcamp of Henry, where I could put my knowledge into practice and demostrate my imagination and professionalism to create features and styles.' />
           </div>
           : null
       }
       {
         modal.soundwave === true ?
           <div className={style.modalBackground}>
-            <Modal handleModal={handleModal} img1={img5} img2={img6} img3={img7} img4={img8} title='Grupal proyect "SoundWave"' deploy="https://soundwave-swart.vercel.app/" repo="https://pbs.twimg.com/media/FFi_DG0XEAYJ6ZH?format=jpg&name=large" description='SoundWave is a free access streaming music service, where any user registered as an artist can share their music and be able to receive donations from their followers to boost their career.' />
+            <Modal handleModal={handleModal} img1={img5} img2={img6} img3={img7} img4={img8} title='Grupal proyect "SoundWave"' deploy="https://soundwave-swart.vercel.app/" repo="https://github.com/SoundWavePF" />
           </div>
           : null
       }

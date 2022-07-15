@@ -10,7 +10,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaGithub, FaLinux } from 'react-icons/fa';
-import { SiExpress, SiPostgresql, SiRedux, SiSequelize, SiTypescript} from 'react-icons/si';
+import { SiExpress, SiPostgresql, SiRedux, SiSequelize, SiTypescript, SiMongodb} from 'react-icons/si';
 
 
 const About = () => {
@@ -68,6 +68,8 @@ Aos.init({duration: 500, once:true})
             <SiTypescript className={style.images}/>
             <SiSequelize className={style.images}/>
             <FaLinux className={style.images}/>
+            <SiMongodb className={style.images}/>
+
           </div>
         </div>
       </div>
