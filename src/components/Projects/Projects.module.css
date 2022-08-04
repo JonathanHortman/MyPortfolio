@@ -1,12 +1,12 @@
-.page{
+.page {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #181b1e;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.modalBackground{
+.modalBackground {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,25 @@
     z-index: 200;
 }
 
-@media(max-width:400px){
-    .page{
+.projectsContainers {
+    /* background-color: red; */
+}
+
+.projectsRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:400px) {
+    .page {
         flex-direction: column;
     }
-    .projectsContainers{
+
+    .projectsContainers {
         display: none;
         width: auto;
         height: auto;
     }
 }
-

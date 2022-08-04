@@ -6,7 +6,8 @@
     height: 100vh;
 
 }
-.textContainer{
+
+.textContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -20,7 +21,8 @@
 .contact {
     font-size: 30px;
 }
-.question{
+
+.question {
     font-size: 15px;
 }
 
@@ -41,6 +43,12 @@
     color: white;
 }
 
+.formContainer input:focus {
+    outline: none;
+}
+.cont textarea:focus{
+    outline:none
+}
 .labels {
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: white;
@@ -67,7 +75,8 @@
     border-radius: 8px;
     font-size: 17px;
 }
-.noSubmit{
+
+.noSubmit {
     font-size: 17px;
     width: 500px;
     border-radius: 8px;

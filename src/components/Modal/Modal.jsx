@@ -17,12 +17,20 @@ const Modal = (props) => {
       <div className={style.projectTitle}>
         <div>{props.title}</div>
         <div className={style.iconsContainer}>
-          <a className={style.links} href={props.deploy} target="_blank">
-            <FaChrome className={style.icons} />
-          </a>
-          <a className={style.links} href={props.repo} target="_blank">
-            <FaGithub className={style.icons} />
-          </a>
+          {
+            props.deploy ?
+              <a className={style.links} href={props.deploy} target="_blank">
+                <FaChrome className={style.icons} />
+              </a>
+              : null
+          }
+          {
+            props.repo ?
+              <a className={style.links} href={props.repo} target="_blank">
+                <FaGithub className={style.icons} />
+              </a>
+              : null
+          }
         </div>
       </div>
       <div className={style.projectDescription}>{props.description}</div>
