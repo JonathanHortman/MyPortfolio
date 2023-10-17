@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import style from "./Contact.module.css"
 import Aos from "aos"
@@ -7,8 +7,11 @@ import { useEffect } from 'react'
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { lenguageEnum } from '../../shared/enums/lenguage.enum'
+import { LenguageContext } from '../../shared/context/LenguageContext';
 export const ContactUs = () => {
+
+  const { lenguage } = useContext(LenguageContext);
 
   let [input, setInput] = useState({
     message: ""
@@ -31,7 +34,7 @@ export const ContactUs = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      });
+    });
   }
 
   useEffect(() => {
@@ -56,38 +59,32 @@ export const ContactUs = () => {
     <div id='Contact' className={style.page}>
 
       <div className={style.textContainer}>
-        <p className={style.contact}>CONTACT</p>
-        <p className={style.question}>Have a question or want to work together?</p>
+        <p className={style.contact}>{lenguage === lenguageEnum.en ? 'CONTACT' : 'CONTACTO'}</p>
+        <p className={style.question}>{lenguage === lenguageEnum.en ? 'Have a question or want to work together?' : '¿Tenes preguntas o queres trabajar conmigo?'}</p>
       </div>
 
       <form className={style.formContainer} ref={form} onSubmit={sendEmail}>
 
         <div className={style.cont} data-aos="fade-right">
-          <label className={style.labels}>Name</label>
-          <input  type="text" name="user_name" required/>
+          <label className={style.labels}>{lenguage === lenguageEnum.en ? 'Name' : 'Nombre'}</label>
+          <input className={style.inputForm} type="text" name="user_name" required />
         </div>
-
-        <br />
 
         <div className={style.cont} data-aos="fade-left">
-          <label className={style.labels}>Email</label>
-          <input  type="email" name="user_email" required/>
+          <label className={style.labels}>{lenguage === lenguageEnum.en ? 'Email' : 'Correo'}</label>
+          <input className={style.inputForm} type="email" name="user_email" required />
         </div>
-
-        <br />
 
         <div className={style.cont} data-aos="fade-right">
-          <label className={style.labels}>Message</label>
-          <textarea className={style.areaText} name="message" onChange={(e)=>onInputChange(e)}/>
+          <label className={style.labels}>{lenguage === lenguageEnum.en ? 'Message' : 'Mensaje'}</label>
+          <textarea  className={style.areaText} name="message" onChange={(e) => onInputChange(e)} />
         </div>
-
-        <br />
 
         <div className={style.cont} >
           {
-            input.message.length?
-            <input className={style.submit} type="submit" value="Send"  required/>
-          :<button className={style.noSubmit} onClick={(e)=>incompleteError(e)}>Complete to send</button>
+            input.message.length ?
+              <input className={style.submit} type="submit" value="Send" required />
+              : <button className={style.noSubmit} onClick={(e) => incompleteError(e)}>{lenguage === lenguageEnum.en ? 'Complete to send' : 'Completa para enviar'}</button>
           }
         </div>
 

@@ -77,8 +77,8 @@
 }
 
 .images {
-    width: 65px;
-    width: 65px;
+    width: 55px;
+    width: 55px;
     height: 65px;
     color: rgb(255, 255, 255);
 }
@@ -91,20 +91,15 @@
 }
 
 .tokenImage {
-    width: 100px;
+    width: 85px;
 }
 
 .tokenImage:hover {
-    transform: rotate(360deg) scale(1.2);
-    transition: all 0.5s ease-in-out 0s;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out 0s;
+
     cursor: pointer;
 }
-
-/* .images:hover {
-    transform: rotate(360deg) scale(1.3);
-    transition: all 0.5s ease-in-out 0s;
-    cursor: pointer;
-} */
 
 .text1 {
     font-family: 'Kdam Thmor Pro', sans-serif;
